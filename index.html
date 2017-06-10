@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>£TK is owed in Airline delay compensation since 2004, so what happens when the EU fucks off? - Ryan Watts Final Project</title>
+  <title>145 thousand flights have been delayed long enough to warrant compensation under EU law, what happens now? - Ryan Watts Final Project</title>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="description" content="That's a lot of money, so what are the most delayed routes and shit.">
@@ -43,21 +43,21 @@
 
       <br>
       <h4>FINAL PROJECT</h4>
-      <h2>£TK is owed in Airline delay compensation since 2004, so what happens when the EU fucks off?</h2>
+      <h2>145 thousand flights have been delayed long enough to warrant compensation under EU law, what happens now?</h2>
       <div class="headerimage">
-        <img src="https://cdn.pixabay.com/photo/2016/12/08/03/54/airport-1890943_960_720.jpg">
+        <img src="http://idolosol.com/images/flight-3.jpg">
       </div>
 
       <div class="caption">
         <p>
-          Airlines are shitting themselves, and for good reason.
+          The EU has protected passengers since 2004, but what happens after Brexit?
         </p>
       </div>
 
       <hr>
 
       <div class="byline">
-        <p><strong>Ryan Watts, Seat 5F</strong></p>
+        <p><strong>Ryan Watts, Airplanes Editor</strong></p>
       </div>
 
       <hr>
@@ -102,6 +102,12 @@
         <p>
           The important interviews go here, like experts and shit.
         </p>
+
+        <!-- Graph One -->
+        <div class="graphdiv">
+          <div class="placeholder"><h1>Graph One</h1><br><br><br><br><br><br><br><br><br><br></div>
+        </div>
+
         <p>
           The important interviews go here, like experts and shit.
         </p>
@@ -116,7 +122,54 @@
         </p>
 
         <!-- Flight comparison interactive -->
-        <div class="interactive"></div>
+
+        <!-- Intro -->
+        <div class="interactive">
+          <div class="i-intro">
+            <h3>Are you flying this summer? </h3>
+            <h5>Which airport should you use to avoid delays?</h5>
+            <p>Select two airports from the drop down below to compare.</p>
+          </div>
+
+          <!-- Dropdowns -->
+          <div class="i-container">
+            <div class="i-dropdown">
+              <select id="selone" name="selector" onchange="setDataOne()">
+                <option value="20">Heathrow</option>
+                <option value="40">Gatwick</option>
+                <option value="60">Stansted</option>
+                <option value="80">Luton</option>
+              </select>
+            </div>
+            <div class="i-dropdown">
+              <select id="seltwo" name="selector" onchange="setDataTwo()">
+                <option value="20">Heathrow</option>
+                <option value="40">Gatwick</option>
+                <option value="60">Stansted</option>
+                <option value="80">Luton</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Graphs -->
+          <div id="testo">
+            <div class="airportchart1"></div>
+              <div id="airplane">
+              </div>
+            <div class="airportchart2"></div>
+              <div id="airplane">
+              </div>
+          </div>
+
+          <!-- Facts -->
+          <div class="facts">
+            <ul>
+              <li>Heathrow had a higher proportion of delays than Gatwick</li>
+              <li>Heathrow has no WiFi and that's super annoying</li>
+              <li>Gatwick is terrible. Have you been? No? Good! Don't bother</li>
+            </ul>
+          </div>
+        </div>
 
         <!-- Contextual interviews -->
         <p>
@@ -135,6 +188,36 @@
           Contextual information, with interviews also.
         </p>
 
+        <!-- Graph Two -->
+        <div class="graphdiv">
+          <div class="placeholder"><h1>Graph Two</h1><br><br><br><br><br><br><br><br><br><br></div>
+        </div>
+
+        <p>
+          Contextual information, with interviews also.
+        </p>
+        <p>
+          Contextual information, with interviews also.
+        </p>
+        <p>
+          Contextual information, with interviews also.
+        </p>
+        <p>
+          Contextual information, with interviews also.
+        </p>
+        <p>
+          Contextual information, with interviews also.
+        </p>
+        <p>
+          Contextual information, with interviews also.
+        </p>
+
+        <!-- Graph three -->
+        <div class="graphdiv">
+          <div class="placeholder"><h1>Graph Three</h1><br><br><br><br><br><br><br><br><br><br></div>
+        </div>
+        <hr>
+        <h1>"We were delayed longer than the duration of the flight, because a light was broken and no one could fix it."</h1>
         <!-- Case studies in claiming compensation -->
         <p>
           Case studies section.
@@ -149,11 +232,93 @@
           Case studies section.
         </p>
         <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque mauris aliquet, rutrum est id, efficitur enim. Integer scelerisque metus et orci ultricies vehicula. Fusce mattis mauris nec sapien mollis interdum. Mauris suscipit, felis non placerat tincidunt, dui elit pretium nunc, eu rhoncus quam enim nec turpis.
+        </p>
+    </div>
+  </div>
+
+        <div class="cscontainerone">
+          <div class="csflex">
+            <div id="cspicture">
+                <img src="http://i.imgur.com/tyNwowg.jpg" width="274px" height="366px"></img>
+            </div>
+            <div class="progress-wrapone progress" data-progress-percentone="100" id="cscaptionone">
+              <div class="progress-barone progress" onclick="caseStudyOne()">
+                <div id="progresstextone">PLAY</div>
+              </div>
+            </div>
+          </div>
+          <div class="csflex" id="cstext">
+            <p>
+              Case studies section.
+            </p>
+            <p>
+              Case studies section.
+            </p>
+            <p>
+              Case studies section.
+            </p>
+            <p>
+              Case studies section.
+            </p>
+            <p>
+              Case studies section.
+            </p>
+            <p>
+              Case studies section.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque mauris aliquet, rutrum est id, efficitur enim. Integer scelerisque metus et orci ultricies vehicula. Fusce mattis mauris nec sapien mollis interdum. Mauris suscipit, felis non placerat tincidunt, dui elit pretium nunc, eu rhoncus quam enim nec turpis.
+            </p>
+          </div>
+        </div>
+
+    <div class="article">
+      <div class="article-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque mauris aliquet, rutrum est id, efficitur enim. Integer scelerisque metus et orci ultricies vehicula. Fusce mattis mauris nec sapien mollis interdum. Mauris suscipit, felis non placerat tincidunt, dui elit pretium nunc, eu rhoncus quam enim nec turpis.
+        </p>
+      </div>
+    </div>
+
+    <div class="cscontainertwo">
+      <div class="csflex" id="cstexttwo">
+        <p>
           Case studies section.
         </p>
         <p>
           Case studies section.
         </p>
+        <p>
+          Case studies section.
+        </p>
+        <p>
+          Case studies section.
+        </p>
+        <p>
+          Case studies section.
+        </p>
+        <p>
+          Case studies section.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque mauris aliquet, rutrum est id, efficitur enim. Integer scelerisque metus et orci ultricies vehicula. Fusce mattis mauris nec sapien mollis interdum. Mauris suscipit, felis non placerat tincidunt, dui elit pretium nunc, eu rhoncus quam enim nec turpis.
+        </p>
+      </div>
+      <div class="csflex">
+        <div id="cspicture">
+            <img src="http://i.imgur.com/tyNwowg.jpg" width="274px" height="366px"></img>
+        </div>
+        <div class="progress-wraptwo progress" data-progress-percenttwo="100" id="cscaptiontwo">
+          <div class="progress-bartwo progress" onclick="caseStudyTwo()">
+            <div id="progresstexttwo">PLAY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="article">
+      <div class="article-text">
         <p>
           Case studies section.
         </p>
@@ -170,7 +335,6 @@
           Case studies section.
         </p>
       </div>
-
     </div>
 
     <hr>
@@ -178,7 +342,7 @@
     <h5>Comments</h5>
 
     <div class="commentsection">
-      <p>More information can be found in the reflection for this project. If you'd like to look through the data yourself, it is available here.</p>
+      <p>More information can be found in the reflection for this project. If you'd like to look through the data yourself, it is available <a href="https://www.caa.co.uk/Data-and-analysis/UK-aviation-market/Flight-reliability/Datasets/UK-flight-punctuality-data/">here.</a></p>
     </div>
 
   </section>
@@ -192,6 +356,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
   <script src="script.js"></script>
 
 </body>
