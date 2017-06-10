@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Lato|PT+Serif|PT+Sans+Narrow');
 
+/*General*/
 body {
   font-family: 'Playfair Display', serif;
   background: #f9f2ec;
@@ -17,6 +18,11 @@ section {
   border-right-style: solid;
   border-width: 1px;
   border-color: #d9e6f2;
+}
+
+.article {
+  width: 650px;
+  margin: auto;
 }
 
 a:link {
@@ -49,8 +55,28 @@ h5 {
   margin-bottom: 10px;
 }
 
-header {
+.caption > p {
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-top: -2px;
+  color: #4d4d4d;
+  font-size: 16px;
 }
+
+.byline > p {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #4d4d4d;
+    font-size: 18px;
+}
+
+.article-text > p {
+  font-family: 'PT Serif', serif;
+  color: #262626;
+  font-size: 18px;
+}
+
+/*Header*/
 
 .headercontainer {
   display: flex;
@@ -144,105 +170,219 @@ header {
   background: grey;
 }
 
-.article {
-  width: 650px;
-  margin: auto;
-}
-
 .headerimage > img {
   margin-top: -10px;
   width: 100%;
 }
 
-.caption > p {
-  font-family: 'PT Sans Narrow', sans-serif;
-  margin-top: -2px;
-  color: #4d4d4d;
+/*Interactive*/
+
+.interactive {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #990000;
+}
+
+h3 {
+  color: #990000;
+  margin-top: 0px;
+  font-size: 42px;
+  text-align: center;
+}
+
+h5 {
+  margin-top: -45px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.i-intro > p {
+  margin-top: -17px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.placeholder {
+  background: darkgrey;
+  color: white;
+}
+
+.i-container {
+  display: -webkit-flex;
+  display: flex;
+  margin-top:-5px;
+  font-size: 40px;
+  width: 100%;
+  background-color: white;
+}
+
+.i-dropdown {
+  width: 50%;
+}
+
+.airportchart1 div {
+  height: 50px;
+  font-size: : 30px;
+  background-color: #990000;
+  text-align: left;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.airportchart2 div {
+  height: 50px;
+  font-size: : 30px;
+  background-color: #990000;
+  text-align: left;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+#testo {
+  margin-top: 40px;
+  margin-left: 11px;
+}
+
+#selone {
+  background-color: #990000;
+  color: white;
+  width:300px;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
   font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.byline > p {
-    font-family: 'PT Sans Narrow', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #4d4d4d;
-    font-size: 18px;
+#seltwo {
+  background-color: #990000;
+  color: white;
+  width:300px;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.article-text > p {
+.airportbar1 {
+  display: -webkit-flex;
+  display: flex;
+  height: 80px;
+}
+
+#airplane > img {
+  width: 80px;
+}
+
+svg {
+  fill: red;
+}
+
+.facts {
+  font-size: 22px;
+  margin-bottom: 26px;
+}
+
+/*Graphs*/
+
+.bar { fill: steelblue; }
+
+/*Case Study*/
+
+.cscontainerone {
+  display: flex;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.cscontainertwo {
+  display: flex;
+  width: 100%;
+  margin-left: 210px;
+}
+
+.csflex  {
+  flex: initial;
+}
+
+#cscaptionone {
+  color: white;
+  width: 274px;
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#cscaptiontwo {
+  color: white;
+  width: 274px;
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#cstext {
+  width: 44%;
   font-family: 'PT Serif', serif;
   color: #262626;
   font-size: 18px;
+  margin-left: 15px;
+  margin-top: -17px;
 }
 
-.interactive {
-  border-style: : solid;
-  border-color: black;
-  border-width: 10px;
+#cstexttwo {
+  width: 44%;
+  font-family: 'PT Serif', serif;
+  color: #262626;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: -17px;
+  margin-right: 10px;
 }
 
-.ihrowone {
-  text-align: center;
-  font-size: 40px;
+.progress {
+  width: 100%;
+  height: 30px;
 }
 
-.ihrowfour {
-  text-align: center;
-  font-size: 40px;
-}
-
-.ihrowtwo {
-  text-align: center;
-  font-size: 110px;
-  color: #a80000;
-  margin-top: -38px;
-  margin-bottom: -33px;
-}
-
-.ihrowthree {
-  text-align: center;
+.progress-wrapone {
+  background: #ff6666;
+  overflow: hidden;
   position: relative;
-  font-size: 20px;
 }
 
-.interactiveheader {
-  display: inline-block;
-  text-align: center;
-  width: 49%;
+.progress-barone {
+    background: #990000;
+    left: 0;
+    position: absolute;
+    top: 0;
 }
 
-.databit {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background-color: white;
-  margin-top:10px;
+.progress-wraptwo {
+  background: #ff6666;
+  overflow: hidden;
+  position: relative;
 }
 
-.related {
-  display: inline-block;
-  text-align: center;
+.progress-bartwo {
+    background: #990000;
+    left: 0;
+    position: absolute;
+    top: 0;
 }
 
-.related > a:link {
-  color: #262626;
-}
-
-.related > a:visited {
-  color: #262626;
-}
-
-.related > a > img {
-  width: 100%;
-}
-
-#relatedone {
-  width: 13%;
-}
-
-#relatedtwo {
-  width: 19%;
-}
+/*Footer*/
 
 .commentsection {
   width: 650px;
@@ -262,86 +402,3 @@ header {
 .commentsection > p > a:visited {
   color: #262626;
 }
-
-.dropbtn {
-    font-family: 'Playfair Display', serif;
-    background-color: #13354E;
-    color: white;
-    padding: 8px;
-    min-width: 260px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #a80000;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.show {
-  display:block;
-}
-
-.dropdown {
-   position: relative;
-   display: inline-block;
-   min-width: 260px;
-   overflow-x: hidden;
-   overflow-y: auto;
- }
-
- .highcharts-title {
-     font-family: 'Playfair Display', serif;
-     font-weight: bold;
- }
-
- .highcharts-subtitle {
-     font-family: 'Playfair Display', serif;
- }
-
- .highcharts-axis-labels {
-     font-family: 'Playfair Display', serif;
- }
-
- .databitone {
-   margin: 20px;
-   font-size: 40px;
- }
-
- .databittwo {
-   margin: 20px;
-   text-align: left;
- }
-
- .databitthree {
-   margin: 20px;
-   text-align: left;
- }
-
- .databitfour {
-   margin: 20px;
-   text-align: left;
- }
