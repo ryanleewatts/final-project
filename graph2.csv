@@ -1,25 +1,27 @@
-country,percentExpenditure
-Afghanistan,18.4
-Armenia,9.4
-Belarus,12.4
-Bolivia,16.9
-Barbados,14.2
-Cote d'Ivoire,20.7
-Colombia,15.9
-Costa Rica,23.1
-Indonesia,17.5
-Iran,19.7
-Jamaica,21.8
-Japan,9.3
-Moldova,18.8
-Mali,18.2
-Malawi,16.3
-Niger,21.7
-Nepal,22.1
-New Zealand,17.8
-Pakistan,11.3
-Peru,16.2
-Qatar,11.1
-Sierra Leone,15.1
-Tanzania,17.3
-South Africa,19.1
+letter	frequency
+A	.08167
+B	.01492
+C	.02782
+D	.04253
+E	.12702
+F	.02288
+G	.02015
+H	.06094
+I	.06966
+J	.00153
+K	.00772
+L	.04025
+M	.02406
+N	.06749
+O	.07507
+P	.01929
+Q	.00095
+R	.05987
+S	.06327
+T	.09056
+U	.02758
+V	.00978
+W	.02360
+X	.00150
+Y	.01974
+Z	.00074
