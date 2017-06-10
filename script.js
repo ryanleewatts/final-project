@@ -1,144 +1,135 @@
-// Graph One
-
-$(function () {
-    var chartone = Highcharts.chart('graphone', {
-        chart: {
-          type: 'bar',
-          backgroundColor: 'transparent'
-        },
-        title: {
-          text: 'Which GNR album has been played the most over the years?',
-          align: 'left',
-          style: {
-                  fontSize:'21px'
-                }
-        },
-        plotOptions: {
-            bar: {
-                colorByPoint: true
-                }
-        },
-        colors: [
-           '#a80000',
-           '#0c244c',
-           '#0c244c',
-           '#0c244c',
-           '#0c244c'
-       ],
-        subtitle: {
-          text: "'Appetite For Destruction' has been played in full 38 times over three decades",
-          align: 'left'
-        },
-        xAxis: {
-          categories: ['Appetite For Destruction', 'Chinese Democracy', 'Use Your Illusion 2', 'Use Your Illusion 1', "G N' R Lies"]
-        },
-        yAxis: {
-          title: {
-              text: 'Tracks played from that album',
-            }
-        },
-        tooltip: {
-          useHTML: true,
-          headerFormat: '<small>{point.key}</small><table>',
-          pointFormat: '<tr><td style="color: {series.color}">{series.name}: </td>' +
-                       '<td style="text-align: right"><b>{point.y} EUR</b></td></tr>',
-          footerFormat: '</table>',
-            formatter: function() {
-                          return '<img src="img/' + this.x + '.jpg" height="125" width="125">';
-                },
-          valueDecimals: 2
-       },
-       legend: {
-          enabled: false
-       },
-       credits: {
-         enabled: false
-       },
-       series: [{
-         data: [5272, 2047, 1562, 1290, 892]
-        }]
-    });
-});
-
-// Graph Two
-
-$(function () {
-    var charttwo = Highcharts.chart('graphtwo', {
-        chart: {
-          type: 'bar',
-          backgroundColor: 'transparent'
-        },
-        title: {
-          text: 'Which hit has been the most frequently played at GNR shows?',
-          align: 'left',
-          style: {
-                  fontSize:'20px'
-                }
-        },
-        plotOptions: {
-            bar: {
-                colorByPoint: true
-                }
-        },
-        colors: [
-           '#a80000',
-           '#a80000',
-           '#a80000',
-           '#a80000',
-           '#0c244c',
-           '#a80000',
-           '#0c244c',
-           '#a80000',
-           '#0c244c',
-           '#0c244c'
-       ],
-        subtitle: {
-          text: "Classic track 'Welcome to the Jungle' tops the charts with 734 plays",
-          align: 'left'
-        },
-        xAxis: {
-          categories: ['Welcome to the Jungle', 'Mr. Brownstone', 'Paradise City', "Sweet Child O' Mine", "Knockin' on Heaven's Door", "It's So Easy", "Live and Let Die", "Nightrain", "November Rain", "You Could Be Mine"]
-        },
-        yAxis: {
-          title: {
-              text: 'Times played',
-            }
-       },
-       tooltip: {
-         formatter: function() {
-           return '<b>' + this.x + '</b> has been played live <b>' + this.y + '</b> times ';
-                }
-              },
-       legend: {
-          enabled: false
-       },
-       credits: {
-         enabled: false
-       },
-       series: [{
-         data: [734, 698, 686, 679, 677, 639, 576, 570, 569, 558]
-        }]
-    });
-});
-
 // Interactive
 
-function submitFunction() {
-    var x = document.getElementById('databit');
-    if (x.style.display !== 'none') {
-        x.style.display = 'none';
-    } else {
-      	x.style.display = 'block';
-    }
-}
+//d3.csv("https://raw.githubusercontent.com/ryanleewatts/datasets/master/airplanes.csv", function(error, data) {
+  //if (error) throw error;
+//});
 
-//Changes the inner html for the databit
-var select = document.getElementById('myDropdown');
-var input = document.getElementById('name');
-select.onchange = function() {
-    document.getElementById('databitone').innerHTML = "<div>Guns N Roses vs " + select.value + "</div>"
-    document.getElementById('databittwo').innerHTML = "<div>Countries visited in 2016</div>"
-    document.getElementById('databitthree').innerHTML = "<div>Length of set by song length</div>"
-    document.getElementById('databitfour').innerHTML = "<div>Percentage of set from first album</div>"
+var data1;
+ function setDataOne(){
+   data1 = document.getElementById('selone').value;
 
-}
+   var x = d3.scaleLinear()
+       .domain([0, 100])
+       .range([0, 620]);
+
+   d3.select(".airportchart1")
+     .selectAll("div")
+       .data(data1)
+     .enter().append("div")
+       .style("width", function(d) { return x(d) + "px"; })
+       .text(function(d) { return d + "% of flights at Heathrow delayed in 2016";});
+ }
+
+ var data2;
+  function setDataTwo(){
+    data2 = document.getElementById('seltwo').value;
+
+    var x = d3.scaleLinear()
+        .domain([0, 100])
+        .range([0, 620]);
+
+    d3.select(".airportchart2")
+      .selectAll("div")
+        .data(data2)
+      .enter().append("div")
+        .style("width", function(d) { return x(d) + "px"; })
+        .text(function(d) { return d + "% of flights at Heathrow delayed in 2016";});
+  }
+
+//var data1 = document.getElementById('selone').value;
+
+//var data2 = document.getElementById('seltwo').value;
+
+//var x = d3.scaleLinear()
+  //  .domain([0, 100])
+    //.range([0, 620]);
+
+//d3.select(".airportchart1")
+  //.selectAll("div")
+    //.data(data1)
+  //.enter().append("div")
+    //.style("width", function(d) { return x(d) + "px"; })
+    //.text(function(d) { return d + "% of flights at Heathrow delayed in 2016";});
+
+//d3.select(".airportchart2")
+  //.selectAll("div")
+    //.data(data2)
+  //.enter().append("div")
+    //.style("width", function(d) { return x(d) + "px"; })
+    //.text(function(d) { return d + "% of flights at Heathrow delayed in 2016";});
+
+//Graph 1
+
+//d3.csv("https://raw.githubusercontent.com/ryanleewatts/datasets/master/finalproject1.csv", function(error, data) {
+
+// Case Study WORKING
+
+$(document).ready(function() {
+    var objone = document.createElement("audio");
+    objone.src="\sound.mp3";
+    objone.volume=0.10;
+    objone.autoPlay=false;
+    objone.preLoad=true;
+
+    $("#cscaptionone").click(function() {
+        objone.play();
+    });
+
+});
+
+$(document).ready(function() {
+    var objtwo = document.createElement("audio");
+    objtwo.src="\sound.mp3";
+    objtwo.volume=0.10;
+    objtwo.autoPlay=false;
+    objtwo.preLoad=true;
+
+    $("#cscaptiontwo").click(function() {
+        objtwo.play();
+    });
+
+});
+
+function caseStudyOne() {
+    textColourOne();
+    moveProgressBarOne();
+};
+
+function caseStudyTwo() {
+    textColourTwo();
+    moveProgressBarTwo();
+};
+
+function textColourOne() {
+  console.log("textColourOne");
+    document.getElementById("progresstextone").style.color = "#990000";
+};
+
+function textColourTwo() {
+  console.log("textColourTwo");
+    document.getElementById("progresstexttwo").style.color = "#990000";
+};
+
+function moveProgressBarOne() {
+  console.log("moveProgressBarOne");
+    var getPercent = ($('.progress-wrapone').data('progress-percentone') / 100);
+    var getProgressWrapWidth = $('.progress-wrapone').width();
+    var progressTotal = getPercent * getProgressWrapWidth;
+    var animationLength = 4500;
+
+    $('.progress-barone').stop().animate({
+                left: progressTotal
+            }, animationLength);
+        }
+
+function moveProgressBarTwo() {
+  console.log("moveProgressBarTwo");
+    var getPercent = ($('.progress-wraptwo').data('progress-percenttwo') / 100);
+    var getProgressWrapWidth = $('.progress-wraptwo').width();
+    var progressTotal = getPercent * getProgressWrapWidth;
+    var animationLength = 4500;
+
+    $('.progress-bartwo').stop().animate({
+                left: progressTotal
+            }, animationLength);
+        }
