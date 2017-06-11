@@ -217,32 +217,31 @@ h5 {
 }
 
 .i-dropdown {
-  width: 50%;
+  margin: auto;
+  width: 40%;
 }
 
-.airportchart1 div {
-  height: 50px;
+.i-button {
+  width:10%;
+}
+
+.airportchart1 {
   font-size: : 30px;
-  background-color: #990000;
-  text-align: left;
+  text-align: right;
   padding: 3px;
   margin: 1px;
   color: white;
-  margin-bottom: 30px;
 }
 
-.airportchart2 div {
-  height: 50px;
+.airportchart2 {
   font-size: : 30px;
-  background-color: #990000;
-  text-align: left;
+  text-align: right;
   padding: 3px;
   margin: 1px;
   color: white;
-  margin-bottom: 30px;
 }
 
-#testo {
+#d3graphs {
   margin-top: 40px;
   margin-left: 11px;
 }
@@ -250,7 +249,7 @@ h5 {
 #selone {
   background-color: #990000;
   color: white;
-  width:300px;
+  width:250px;
   display: block;
   margin: 0 auto;
   padding: 8px;
@@ -261,11 +260,26 @@ h5 {
 }
 
 #seltwo {
-  background-color: #990000;
+  background-color: #ff6666;
   color: white;
-  width:300px;
+  width:250px;
   display: block;
   margin: 0 auto;
+  margin-left: -25px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#i-button {
+  background-color: #990000;
+  color: white;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-left: -38px;
   padding: 8px;
   text-align: center;
   font-size: 16px;
@@ -283,18 +297,75 @@ h5 {
   width: 80px;
 }
 
-svg {
-  fill: red;
+#facts {
+  font-family: 'PT Serif';
+  font-size: 20px;
+  background:#990000;
+  color: white;
+  display: none;
+}
+
+ul li {
+  padding: 5px 0px;
 }
 
 .facts {
-  font-size: 22px;
   margin-bottom: 26px;
 }
-
 /*Graphs*/
 
-.bar { fill: steelblue; }
+#graphdivone {
+  margin-top: 55px;
+  font-family: 'Playfair Display', serif;
+}
+
+#graphtwo, #graph {
+  margin-left: -55px;
+  font-family: 'Playfair Display', serif;
+}
+
+.axis .domain {
+  display: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.tick {
+  font-family: 'Playfair Display', serif;
+}
+
+.graphone {
+  margin-left: -40px;
+}
+
+.legend {
+  color: white;
+  text-align: center;
+}
+
+.bar:hover {
+  stroke: black;
+  opacity; 0.5;
+  }
+
+.graphtitle {
+  text-align: center;
+}
+
+.highcharts-title {
+     font-family: 'Playfair Display', serif;
+     font-weight: bold;
+     font-size: 22px;
+     color: #333333;
+     fill: #333333;
+ }
+
+ .highcharts-subtitle {
+     font-family: 'Playfair Display', serif;
+ }
+
+ .highcharts-axis-labels {
+     font-family: 'Playfair Display', serif;
+ }
 
 /*Case Study*/
 
