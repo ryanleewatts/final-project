@@ -1,3 +1,7 @@
+$(document).ready(function ($) {
+	$('.cycle').cyclotron();
+});
+
 //Graph 1
 
 var svg = d3.select(".graphone"),
@@ -16,6 +20,13 @@ var y = d3.scaleLinear()
 
 var z = d3.scaleOrdinal()
     .range(["#8B0000", "#B22222", "#CD5C5C", "#F08080"]);
+
+var tool_tip = d3.tip()
+     .attr("class", "d3-tip")
+     .offset([-8, 0])
+     //.html( + "flights were delayed by " + " in ");
+     .html(function(d) { return d + " test"; });
+   svg.call(tool_tip);
 
 d3.csv("https://raw.githubusercontent.com/cityfinalproject/cityfinalproject.github.io/master/graph1.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
@@ -42,7 +53,7 @@ d3.csv("https://raw.githubusercontent.com/cityfinalproject/cityfinalproject.gith
       .attr("x", function(d) { return x(d.data.Year); })
       .attr("y", function(d) { return y(d[1]); })
       .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-      .attr("width", x.bandwidth());
+      .attr("width", x.bandwidth())
 
   g.append("g")
       .attr("class", "axis")
@@ -64,23 +75,25 @@ d3.csv("https://raw.githubusercontent.com/cityfinalproject/cityfinalproject.gith
 
   var legend = g.append("g")
       .attr("class", "legend")
-      .attr("font-family", "Playfair Display, serif")
-      .attr("font-size", 12)
-      .attr("text-anchor", "start")
+      .attr("font-size", 14)
+      .attr("text-anchor", "end")
     .selectAll("g")
     .data(keys.slice().reverse())
     .enter().append("g")
-      .attr("transform", function(d, i) { return "translate(0," + i * 15 + ")"; });
+      .attr("transform", function(d, i) { return "translate(0," + i * 16 + ")"; });
 
   legend.append("rect")
-      .attr("x", width - 620)
-      .attr("width", 135)
-      .attr("height", 14)
-      .attr("fill", z);
+      .attr("x", width - 35)
+      .attr("y", 32)
+      .attr("width", 15)
+      .attr("height", 15)
+      .attr("fill", z)
+      .style("stroke", "black")
+      .style("stroke-width", 0.2);
 
   legend.append("text")
-      .attr("x", width - 620)
-      .attr("y", 9.5)
+      .attr("x", width - 40)
+      .attr("y", 40)
       .attr("dy", "0.32em")
       .text(function(d) { return d; });
 
@@ -116,7 +129,7 @@ $(function () {
            '#a80000',
        ],
         xAxis: {
-          categories: ['Easyjet', 'British Airways', 'Ryanair', 'Monarch', 'Easyjet', 'British Airways', 'Ryanair', 'Monarch', 'Easyjet', 'British Airways'],
+          categories: ['Thomas Cook', 'Monarch', 'Thomson', 'Jet2', 'Virgin', 'FlyBe', 'EasyJet', 'British Airways', 'Eastern', 'Ryanair'],
           gridLineWidth: 0
         },
         yAxis: {
@@ -126,7 +139,7 @@ $(function () {
        },
        tooltip: {
          formatter: function() {
-           return 'Flights through <b>' + this.x + '</b> were delayed by more than 3 hours <b>' + this.y + '</b> times since 2004 ';
+           return '<b>' + this.y + '%</b> of flights organised through <b>' + this.x + '</b> were delayed by more than 3 hours since 2004.';
                 }
               },
        legend: {
@@ -136,68 +149,7 @@ $(function () {
          enabled: false
        },
        series: [{
-         data: [10, 9, 8, 7, 6, 5, 4, 3 ,2, 1]
-        }]
-    });
-});
-
-//Graph 3
-
-$.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
-
-    Highcharts.chart('graphthree', {
-        chart: {
-        },
-        title: {
-            text: ' '
-        },
-        xAxis: {
-            type: 'datetime',
-            gridLineWidth: 0
-        },
-        yAxis: {
-            title: {
-                text: ' '
-            }
-        },
-        legend: {
-            enabled: false
-        },
-        credits: {
-            enabled: false
-        },
-        plotOptions: {
-            area: {
-                fillColor: {
-                    linearGradient: {
-                        x1: 0,
-                        y1: 0,
-                        x2: 0,
-                        y2: 1
-                    },
-                    stops: [
-                        [0, Highcharts.getOptions().colors[0]],
-                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-                    ]
-                },
-                marker: {
-                    radius: 2
-                },
-                lineWidth: 1,
-                states: {
-                    hover: {
-                        lineWidth: 1
-                    }
-                },
-                threshold: null
-            }
-        },
-
-        series: [{
-            type: 'line',
-            name: 'USD to EUR',
-            color: '#990000',
-            data: data
+         data: [2.26, 1.71, 1.25, 0.96, 0.95, 0.72, 0.64, 0.5 ,0.5, 0.45]
         }]
     });
 });
@@ -220,19 +172,19 @@ var data2;
 
 function airportCompare(){
   // First Bar
-  document.getElementById('airportchart1').style.width = data1 + "%" ;
+  document.getElementById('airportchart1').style.width = data1*5 + "%" ;
   document.getElementById('airportchart1').style.background = "#990000";
   document.getElementById('airportchart1').style.height = "60px";
-  document.getElementById('airportchart1').innerHTML = "<span style='font-size:40px'>" + data1 + "% </span>";
+  document.getElementById('airportchart1').innerHTML = "<span style='font-size:40px'>" + data1 + " mins </span>";
   // Second Bar
-  document.getElementById('airportchart2').style.width = data2 + "%";
+  document.getElementById('airportchart2').style.width = data2*5 + "%";
   document.getElementById('airportchart2').style.background = "#ff6666";
   document.getElementById('airportchart2').style.height = "60px";
-  document.getElementById('airportchart2').innerHTML = "<span style='font-size:40px'>" + data2 + "% </span>";
+  document.getElementById('airportchart2').innerHTML = "<span style='font-size:40px'>" + data2 + " mins </span>";
   //Facts
-  document.getElementById('factone').innerHTML = "<b>" + data1 + "%</b> of all flights from <b>" + airportname1 + "</b> were delayed by over 15 minutes last year, compared to <b>" + data2 + "%</b> flights from <b>" + airportname2 + ".</b>";
-  document.getElementById('facttwo').innerHTML = funfact1;
-  document.getElementById('factthree').innerHTML = funfact2;
+  document.getElementById('factone').innerHTML = "The average delay at <b>" + airportname1 + "</b> was <b>" + data1 + "</b> minutes compared to <b>" + data2 + "</b> minutes at <b>" + airportname2 + ".</b>";
+  document.getElementById('facttwo').innerHTML = "<b>" + funfact1 + "%</b> of flights from <b>" + airportname1 + "</b> have been delayed by over 15 minutes since 2004";
+  document.getElementById('factthree').innerHTML = "<b>" + funfact2 + "%</b> of flights from <b>" + airportname2 + "</b> have been delayed by over 15 minutes since 2004";
   document.getElementById('facts').style.display = "block";
 }
 
@@ -240,7 +192,7 @@ function airportCompare(){
 
 $(document).ready(function() {
     var objone = document.createElement("audio");
-    objone.src="\sound.mp3";
+    objone.src="clip1.mp3";
     objone.volume=0.10;
     objone.autoPlay=false;
     objone.preLoad=true;
@@ -253,7 +205,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     var objtwo = document.createElement("audio");
-    objtwo.src="\sound.mp3";
+    objtwo.src="clip2.mp3";
     objtwo.volume=0.10;
     objtwo.autoPlay=false;
     objtwo.preLoad=true;
@@ -289,7 +241,7 @@ function moveProgressBarOne() {
     var getPercent = ($('.progress-wrapone').data('progress-percentone') / 100);
     var getProgressWrapWidth = $('.progress-wrapone').width();
     var progressTotal = getPercent * getProgressWrapWidth;
-    var animationLength = 4500;
+    var animationLength = 21500;
 
     $('.progress-barone').stop().animate({
                 left: progressTotal
@@ -301,7 +253,7 @@ function moveProgressBarTwo() {
     var getPercent = ($('.progress-wraptwo').data('progress-percenttwo') / 100);
     var getProgressWrapWidth = $('.progress-wraptwo').width();
     var progressTotal = getPercent * getProgressWrapWidth;
-    var animationLength = 4500;
+    var animationLength = 8200;
 
     $('.progress-bartwo').stop().animate({
                 left: progressTotal
