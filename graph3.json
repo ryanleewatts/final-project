@@ -1,0 +1,842 @@
+[
+ {
+   "Date": "1/4/2004",
+   "Gatwick": 151,
+   "Stansted": 87,
+   "Luton": 87,
+   "London City": 24,
+   "Heathrow": 392
+ },
+ {
+   "Date": "1/5/2004",
+   "Gatwick": 120,
+   "Stansted": 65,
+   "Luton": 65,
+   "London City": 3,
+   "Heathrow": 137
+ },
+ {
+   "Date": "1/6/2004",
+   "Gatwick": 103,
+   "Stansted": 55,
+   "Luton": 55,
+   "London City": 7,
+   "Heathrow": 187
+ },
+ {
+   "Date": "1/7/2004",
+   "Gatwick": 90,
+   "Stansted": 41,
+   "Luton": 41,
+   "London City": 4,
+   "Heathrow": 95
+ },
+ {
+   "Date": "1/8/2004",
+   "Gatwick": 121,
+   "Stansted": 32,
+   "Luton": 32,
+   "London City": 4,
+   "Heathrow": 106
+ },
+ {
+   "Date": "1/9/2004",
+   "Gatwick": 245,
+   "Stansted": 90,
+   "Luton": 90,
+   "London City": 8,
+   "Heathrow": 115
+ },
+ {
+   "Date": "1/10/2004",
+   "Gatwick": 246,
+   "Stansted": 83,
+   "Luton": 83,
+   "London City": 3,
+   "Heathrow": 228
+ },
+ {
+   "Date": "1/11/2004",
+   "Gatwick": 316,
+   "Stansted": 80,
+   "Luton": 80,
+   "London City": 5,
+   "Heathrow": 444
+ },
+ {
+   "Date": "1/12/2004",
+   "Gatwick": 274,
+   "Stansted": 69,
+   "Luton": 69,
+   "London City": 4,
+   "Heathrow": 217
+ },
+ {
+   "Date": "1/1/2005",
+   "Gatwick": 163,
+   "Stansted": 75,
+   "Luton": 75,
+   "London City": 2,
+   "Heathrow": 182
+ },
+ {
+   "Date": "1/2/2005",
+   "Gatwick": 79,
+   "Stansted": 52,
+   "Luton": 52,
+   "London City": 14,
+   "Heathrow": 149
+ },
+ {
+   "Date": "1/3/2005",
+   "Gatwick": 144,
+   "Stansted": 70,
+   "Luton": 70,
+   "London City": 4,
+   "Heathrow": 297
+ },
+ {
+   "Date": "1/8/2005",
+   "Gatwick": 1227,
+   "Stansted": 420,
+   "Luton": 420,
+   "London City": 48,
+   "Heathrow": 1348
+ },
+ {
+   "Date": "1/10/2005",
+   "Gatwick": 374,
+   "Stansted": 72,
+   "Luton": 72,
+   "London City": 4,
+   "Heathrow": 236
+ },
+ {
+   "Date": "1/11/2005",
+   "Gatwick": 432,
+   "Stansted": 57,
+   "Luton": 57,
+   "London City": 3,
+   "Heathrow": 200
+ },
+ {
+   "Date": "1/12/2005",
+   "Gatwick": 325,
+   "Stansted": 63,
+   "Luton": 63,
+   "London City": 7,
+   "Heathrow": 144
+ },
+ {
+   "Date": "1/1/2006",
+   "Gatwick": 374,
+   "Stansted": 146,
+   "Luton": 146,
+   "London City": 33,
+   "Heathrow": 330
+ },
+ {
+   "Date": "1/3/2006",
+   "Gatwick": 175,
+   "Stansted": 72,
+   "Luton": 72,
+   "London City": 6,
+   "Heathrow": 268
+ },
+ {
+   "Date": "1/4/2006",
+   "Gatwick": 294,
+   "Stansted": 123,
+   "Luton": 123,
+   "London City": 14,
+   "Heathrow": 352
+ },
+ {
+   "Date": "1/6/2006",
+   "Gatwick": 172,
+   "Stansted": 72,
+   "Luton": 72,
+   "London City": 20,
+   "Heathrow": 205
+ },
+ {
+   "Date": "1/7/2006",
+   "Gatwick": 429,
+   "Stansted": 113,
+   "Luton": 113,
+   "London City": 33,
+   "Heathrow": 304
+ },
+ {
+   "Date": "1/9/2006",
+   "Gatwick": 328,
+   "Stansted": 90,
+   "Luton": 90,
+   "London City": 1,
+   "Heathrow": 165
+ },
+ {
+   "Date": "1/10/2006",
+   "Gatwick": 362,
+   "Stansted": 108,
+   "Luton": 108,
+   "London City": 9,
+   "Heathrow": 304
+ },
+ {
+   "Date": "1/11/2006",
+   "Gatwick": 644,
+   "Stansted": 190,
+   "Luton": 190,
+   "London City": 2,
+   "Heathrow": 456
+ },
+ {
+   "Date": "1/12/2006",
+   "Gatwick": 312,
+   "Stansted": 70,
+   "Luton": 70,
+   "London City": 4,
+   "Heathrow": 184
+ },
+ {
+   "Date": "1/1/2007",
+   "Gatwick": 355,
+   "Stansted": 155,
+   "Luton": 155,
+   "London City": 17,
+   "Heathrow": 379
+ },
+ {
+   "Date": "1/3/2007",
+   "Gatwick": 426,
+   "Stansted": 220,
+   "Luton": 220,
+   "London City": 23,
+   "Heathrow": 939
+ },
+ {
+   "Date": "1/7/2007",
+   "Gatwick": 216,
+   "Stansted": 69,
+   "Luton": 69,
+   "London City": 6,
+   "Heathrow": 190
+ },
+ {
+   "Date": "1/8/2007",
+   "Gatwick": 499,
+   "Stansted": 189,
+   "Luton": 189,
+   "London City": 28,
+   "Heathrow": 432
+ },
+ {
+   "Date": "1/9/2007",
+   "Gatwick": 503,
+   "Stansted": 235,
+   "Luton": 235,
+   "London City": 37,
+   "Heathrow": 897
+ },
+ {
+   "Date": "1/10/2007",
+   "Gatwick": 421,
+   "Stansted": 116,
+   "Luton": 116,
+   "London City": 17,
+   "Heathrow": 417
+ },
+ {
+   "Date": "1/11/2007",
+   "Gatwick": 694,
+   "Stansted": 199,
+   "Luton": 199,
+   "London City": 26,
+   "Heathrow": 424
+ },
+ {
+   "Date": "1/12/2007",
+   "Gatwick": 215,
+   "Stansted": 62,
+   "Luton": 62,
+   "London City": 30,
+   "Heathrow": 247
+ },
+ {
+   "Date": "1/1/2008",
+   "Gatwick": 113,
+   "Stansted": 49,
+   "Luton": 49,
+   "London City": 10,
+   "Heathrow": 181
+ },
+ {
+   "Date": "1/2/2008",
+   "Gatwick": 510,
+   "Stansted": 73,
+   "Luton": 73,
+   "London City": 38,
+   "Heathrow": 575
+ },
+ {
+   "Date": "1/3/2008",
+   "Gatwick": 192,
+   "Stansted": 71,
+   "Luton": 71,
+   "London City": 46,
+   "Heathrow": 448
+ },
+ {
+   "Date": "1/4/2008",
+   "Gatwick": 163,
+   "Stansted": 55,
+   "Luton": 55,
+   "London City": 69,
+   "Heathrow": 350
+ },
+ {
+   "Date": "1/5/2008",
+   "Gatwick": 212,
+   "Stansted": 80,
+   "Luton": 80,
+   "London City": 18,
+   "Heathrow": 351
+ },
+ {
+   "Date": "1/6/2008",
+   "Gatwick": 395,
+   "Stansted": 55,
+   "Luton": 55,
+   "London City": 7,
+   "Heathrow": 354
+ },
+ {
+   "Date": "1/7/2008",
+   "Gatwick": 270,
+   "Stansted": 62,
+   "Luton": 62,
+   "London City": 12,
+   "Heathrow": 132
+ },
+ {
+   "Date": "1/8/2008",
+   "Gatwick": 278,
+   "Stansted": 56,
+   "Luton": 56,
+   "London City": 16,
+   "Heathrow": 242
+ },
+ {
+   "Date": "1/9/2008",
+   "Gatwick": 510,
+   "Stansted": 105,
+   "Luton": 105,
+   "London City": 8,
+   "Heathrow": 253
+ },
+ {
+   "Date": "1/10/2008",
+   "Gatwick": 511,
+   "Stansted": 100,
+   "Luton": 100,
+   "London City": 9,
+   "Heathrow": 267
+ },
+ {
+   "Date": "1/11/2008",
+   "Gatwick": 353,
+   "Stansted": 100,
+   "Luton": 100,
+   "London City": 11,
+   "Heathrow": 201
+ },
+ {
+   "Date": "1/1/2009",
+   "Gatwick": 348,
+   "Stansted": 108,
+   "Luton": 108,
+   "London City": 35,
+   "Heathrow": 314
+ },
+ {
+   "Date": "1/2/2009",
+   "Gatwick": 361,
+   "Stansted": 49,
+   "Luton": 49,
+   "London City": 23,
+   "Heathrow": 240
+ },
+ {
+   "Date": "1/3/2009",
+   "Gatwick": 155,
+   "Stansted": 79,
+   "Luton": 79,
+   "London City": 15,
+   "Heathrow": 491
+ },
+ {
+   "Date": "1/4/2009",
+   "Gatwick": 210,
+   "Stansted": 74,
+   "Luton": 74,
+   "London City": 31,
+   "Heathrow": 308
+ },
+ {
+   "Date": "1/5/2009",
+   "Gatwick": 58,
+   "Stansted": 27,
+   "Luton": 27,
+   "London City": 3,
+   "Heathrow": 94
+ },
+ {
+   "Date": "1/9/2009",
+   "Gatwick": 415,
+   "Stansted": 81,
+   "Luton": 81,
+   "London City": 3,
+   "Heathrow": 258
+ },
+ {
+   "Date": "1/3/2010",
+   "Gatwick": 521,
+   "Stansted": 132,
+   "Luton": 132,
+   "London City": 44,
+   "Heathrow": 638
+ },
+ {
+   "Date": "1/4/2010",
+   "Gatwick": 180,
+   "Stansted": 84,
+   "Luton": 84,
+   "London City": 12,
+   "Heathrow": 155
+ },
+ {
+   "Date": "1/6/2010",
+   "Gatwick": 249,
+   "Stansted": 56,
+   "Luton": 56,
+   "London City": 3,
+   "Heathrow": 264
+ },
+ {
+   "Date": "1/8/2010",
+   "Gatwick": 2265,
+   "Stansted": 673,
+   "Luton": 673,
+   "London City": 160,
+   "Heathrow": 1897
+ },
+ {
+   "Date": "1/9/2010",
+   "Gatwick": 475,
+   "Stansted": 68,
+   "Luton": 68,
+   "London City": 10,
+   "Heathrow": 218
+ },
+ {
+   "Date": "1/10/2010",
+   "Gatwick": 330,
+   "Stansted": 62,
+   "Luton": 62,
+   "London City": 4,
+   "Heathrow": 193
+ },
+ {
+   "Date": "1/11/2010",
+   "Gatwick": 360,
+   "Stansted": 99,
+   "Luton": 99,
+   "London City": 8,
+   "Heathrow": 199
+ },
+ {
+   "Date": "1/12/2010",
+   "Gatwick": 176,
+   "Stansted": 46,
+   "Luton": 46,
+   "London City": 27,
+   "Heathrow": 142
+ },
+ {
+   "Date": "1/1/2011",
+   "Gatwick": 157,
+   "Stansted": 45,
+   "Luton": 45,
+   "London City": 12,
+   "Heathrow": 454
+ },
+ {
+   "Date": "1/2/2011",
+   "Gatwick": 788,
+   "Stansted": 187,
+   "Luton": 187,
+   "London City": 116,
+   "Heathrow": 846
+ },
+ {
+   "Date": "1/4/2011",
+   "Gatwick": 273,
+   "Stansted": 80,
+   "Luton": 80,
+   "London City": 13,
+   "Heathrow": 333
+ },
+ {
+   "Date": "1/6/2011",
+   "Gatwick": 91,
+   "Stansted": 14,
+   "Luton": 14,
+   "London City": 45,
+   "Heathrow": 116
+ },
+ {
+   "Date": "1/12/2011",
+   "Gatwick": 152,
+   "Stansted": 45,
+   "Luton": 45,
+   "London City": 5,
+   "Heathrow": 146
+ },
+ {
+   "Date": "1/1/2012",
+   "Gatwick": 57,
+   "Stansted": 31,
+   "Luton": 31,
+   "London City": 40,
+   "Heathrow": 304
+ },
+ {
+   "Date": "1/2/2012",
+   "Gatwick": 95,
+   "Stansted": 33,
+   "Luton": 33,
+   "London City": 1,
+   "Heathrow": 152
+ },
+ {
+   "Date": "1/3/2012",
+   "Gatwick": 1142,
+   "Stansted": 299,
+   "Luton": 299,
+   "London City": 52,
+   "Heathrow": 1320
+ },
+ {
+   "Date": "1/4/2012",
+   "Gatwick": 245,
+   "Stansted": 97,
+   "Luton": 97,
+   "London City": 18,
+   "Heathrow": 370
+ },
+ {
+   "Date": "1/6/2012",
+   "Gatwick": 162,
+   "Stansted": 53,
+   "Luton": 53,
+   "London City": 8,
+   "Heathrow": 181
+ },
+ {
+   "Date": "1/7/2012",
+   "Gatwick": 151,
+   "Stansted": 28,
+   "Luton": 28,
+   "London City": 6,
+   "Heathrow": 113
+ },
+ {
+   "Date": "1/9/2012",
+   "Gatwick": 381,
+   "Stansted": 68,
+   "Luton": 68,
+   "London City": 9,
+   "Heathrow": 432
+ },
+ {
+   "Date": "1/10/2012",
+   "Gatwick": 181,
+   "Stansted": 49,
+   "Luton": 49,
+   "London City": 8,
+   "Heathrow": 173
+ },
+ {
+   "Date": "1/11/2012",
+   "Gatwick": 188,
+   "Stansted": 31,
+   "Luton": 31,
+   "London City": 9,
+   "Heathrow": 152
+ },
+ {
+   "Date": "1/12/2012",
+   "Gatwick": 162,
+   "Stansted": 58,
+   "Luton": 58,
+   "London City": 28,
+   "Heathrow": 264
+ },
+ {
+   "Date": "1/1/2013",
+   "Gatwick": 177,
+   "Stansted": 108,
+   "Luton": 108,
+   "London City": 38,
+   "Heathrow": 409
+ },
+ {
+   "Date": "1/2/2013",
+   "Gatwick": 123,
+   "Stansted": 31,
+   "Luton": 31,
+   "London City": 31,
+   "Heathrow": 171
+ },
+ {
+   "Date": "1/3/2013",
+   "Gatwick": 321,
+   "Stansted": 105,
+   "Luton": 105,
+   "London City": 36,
+   "Heathrow": 595
+ },
+ {
+   "Date": "1/4/2013",
+   "Gatwick": 131,
+   "Stansted": 31,
+   "Luton": 31,
+   "London City": 12,
+   "Heathrow": 193
+ },
+ {
+   "Date": "1/7/2013",
+   "Gatwick": 167,
+   "Stansted": 66,
+   "Luton": 66,
+   "London City": 10,
+   "Heathrow": 331
+ },
+ {
+   "Date": "1/8/2013",
+   "Gatwick": 292,
+   "Stansted": 84,
+   "Luton": 84,
+   "London City": 12,
+   "Heathrow": 208
+ },
+ {
+   "Date": "1/9/2013",
+   "Gatwick": 205,
+   "Stansted": 34,
+   "Luton": 34,
+   "London City": 3,
+   "Heathrow": 312
+ },
+ {
+   "Date": "1/10/2013",
+   "Gatwick": 158,
+   "Stansted": 44,
+   "Luton": 44,
+   "London City": 3,
+   "Heathrow": 160
+ },
+ {
+   "Date": "1/12/2013",
+   "Gatwick": 118,
+   "Stansted": 52,
+   "Luton": 52,
+   "London City": 28,
+   "Heathrow": 214
+ },
+ {
+   "Date": "1/3/2014",
+   "Gatwick": 235,
+   "Stansted": 60,
+   "Luton": 60,
+   "London City": 6,
+   "Heathrow": 243
+ },
+ {
+   "Date": "1/6/2014",
+   "Gatwick": 389,
+   "Stansted": 142,
+   "Luton": 142,
+   "London City": 73,
+   "Heathrow": 766
+ },
+ {
+   "Date": "1/7/2014",
+   "Gatwick": 138,
+   "Stansted": 53,
+   "Luton": 53,
+   "London City": 4,
+   "Heathrow": 149
+ },
+ {
+   "Date": "1/8/2014",
+   "Gatwick": 311,
+   "Stansted": 73,
+   "Luton": 73,
+   "London City": 11,
+   "Heathrow": 208
+ },
+ {
+   "Date": "1/9/2014",
+   "Gatwick": 390,
+   "Stansted": 59,
+   "Luton": 59,
+   "London City": 13,
+   "Heathrow": 228
+ },
+ {
+   "Date": "1/10/2014",
+   "Gatwick": 56,
+   "Stansted": 25,
+   "Luton": 25,
+   "London City": 0,
+   "Heathrow": 103
+ },
+ {
+   "Date": "1/11/2014",
+   "Gatwick": 186,
+   "Stansted": 57,
+   "Luton": 57,
+   "London City": 43,
+   "Heathrow": 127
+ },
+ {
+   "Date": "1/12/2014",
+   "Gatwick": 436,
+   "Stansted": 178,
+   "Luton": 178,
+   "London City": 24,
+   "Heathrow": 657
+ },
+ {
+   "Date": "1/4/2015",
+   "Gatwick": 486,
+   "Stansted": 248,
+   "Luton": 248,
+   "London City": 66,
+   "Heathrow": 701
+ },
+ {
+   "Date": "1/5/2015",
+   "Gatwick": 73,
+   "Stansted": 39,
+   "Luton": 39,
+   "London City": 11,
+   "Heathrow": 152
+ },
+ {
+   "Date": "1/7/2015",
+   "Gatwick": 149,
+   "Stansted": 56,
+   "Luton": 56,
+   "London City": 12,
+   "Heathrow": 147
+ },
+ {
+   "Date": "1/8/2015",
+   "Gatwick": 171,
+   "Stansted": 55,
+   "Luton": 55,
+   "London City": 9,
+   "Heathrow": 194
+ },
+ {
+   "Date": "1/9/2015",
+   "Gatwick": 362,
+   "Stansted": 140,
+   "Luton": 140,
+   "London City": 42,
+   "Heathrow": 454
+ },
+ {
+   "Date": "1/10/2015",
+   "Gatwick": 242,
+   "Stansted": 89,
+   "Luton": 89,
+   "London City": 11,
+   "Heathrow": 192
+ },
+ {
+   "Date": "1/12/2015",
+   "Gatwick": 208,
+   "Stansted": 57,
+   "Luton": 57,
+   "London City": 15,
+   "Heathrow": 188
+ },
+ {
+   "Date": "1/1/2016",
+   "Gatwick": 381,
+   "Stansted": 135,
+   "Luton": 135,
+   "London City": 25,
+   "Heathrow": 504
+ },
+ {
+   "Date": "1/3/2016",
+   "Gatwick": 95,
+   "Stansted": 78,
+   "Luton": 78,
+   "London City": 15,
+   "Heathrow": 139
+ },
+ {
+   "Date": "1/4/2016",
+   "Gatwick": 91,
+   "Stansted": 66,
+   "Luton": 66,
+   "London City": 11,
+   "Heathrow": 168
+ },
+ {
+   "Date": "1/5/2016",
+   "Gatwick": 375,
+   "Stansted": 101,
+   "Luton": 101,
+   "London City": 34,
+   "Heathrow": 299
+ },
+ {
+   "Date": "1/2/2017",
+   "Gatwick": 77,
+   "Stansted": 28,
+   "Luton": 28,
+   "London City": 46,
+   "Heathrow": 111
+ },
+ {
+   "Date": "1/3/2017",
+   "Gatwick": 2273,
+   "Stansted": 582,
+   "Luton": 582,
+   "London City": 243,
+   "Heathrow": 2193
+ },
+ {
+   "Date": "1/4/2017",
+   "Gatwick": 209,
+   "Stansted": 64,
+   "Luton": 64,
+   "London City": 33,
+   "Heathrow": 221
+ },
+ {
+   "Date": "1/5/2017",
+   "Gatwick": 139,
+   "Stansted": 64,
+   "Luton": 64,
+   "London City": 19,
+   "Heathrow": 146
+ }
+]
