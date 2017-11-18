@@ -1,7 +1,3 @@
-$(document).ready(function ($) {
-	$('.cycle').cyclotron();
-});
-
 //Graph 1
 
 var svg = d3.select(".graphone"),
@@ -28,7 +24,7 @@ var tool_tip = d3.tip()
      .html(function(d) { return d + " test"; });
    svg.call(tool_tip);
 
-d3.csv("https://raw.githubusercontent.com/cityfinalproject/cityfinalproject.github.io/master/graph1.csv", function(d, i, columns) {
+d3.csv("https://raw.githubusercontent.com/cityfinalproject/cityfinalproject.github.io/master/data/graph1.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
   d.total = t;
   return d;
@@ -187,75 +183,3 @@ function airportCompare(){
   document.getElementById('factthree').innerHTML = "<b>" + funfact2 + "%</b> of flights from <b>" + airportname2 + "</b> have been delayed by over 15 minutes since 2004";
   document.getElementById('facts').style.display = "block";
 }
-
-// Case Study WORKING
-
-$(document).ready(function() {
-    var objone = document.createElement("audio");
-    objone.src="clip1.mp3";
-    objone.volume=0.10;
-    objone.autoPlay=false;
-    objone.preLoad=true;
-
-    $("#cscaptionone").click(function() {
-        objone.play();
-    });
-
-});
-
-$(document).ready(function() {
-    var objtwo = document.createElement("audio");
-    objtwo.src="clip2.mp3";
-    objtwo.volume=0.10;
-    objtwo.autoPlay=false;
-    objtwo.preLoad=true;
-
-    $("#cscaptiontwo").click(function() {
-        objtwo.play();
-    });
-
-});
-
-function caseStudyOne() {
-    textColourOne();
-    moveProgressBarOne();
-};
-
-function caseStudyTwo() {
-    textColourTwo();
-    moveProgressBarTwo();
-};
-
-function textColourOne() {
-  console.log("textColourOne");
-    document.getElementById("progresstextone").style.color = "#990000";
-};
-
-function textColourTwo() {
-  console.log("textColourTwo");
-    document.getElementById("progresstexttwo").style.color = "#990000";
-};
-
-function moveProgressBarOne() {
-  console.log("moveProgressBarOne");
-    var getPercent = ($('.progress-wrapone').data('progress-percentone') / 100);
-    var getProgressWrapWidth = $('.progress-wrapone').width();
-    var progressTotal = getPercent * getProgressWrapWidth;
-    var animationLength = 21500;
-
-    $('.progress-barone').stop().animate({
-                left: progressTotal
-            }, animationLength);
-        }
-
-function moveProgressBarTwo() {
-  console.log("moveProgressBarTwo");
-    var getPercent = ($('.progress-wraptwo').data('progress-percenttwo') / 100);
-    var getProgressWrapWidth = $('.progress-wraptwo').width();
-    var progressTotal = getPercent * getProgressWrapWidth;
-    var animationLength = 8200;
-
-    $('.progress-bartwo').stop().animate({
-                left: progressTotal
-            }, animationLength);
-        }
