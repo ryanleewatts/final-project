@@ -24,7 +24,7 @@ var tool_tip = d3.tip()
      .html(function(d) { return d + " test"; });
    svg.call(tool_tip);
 
-d3.csv("https://raw.githubusercontent.com/cityfinalproject/cityfinalproject.github.io/master/data/graph1.csv", function(d, i, columns) {
+d3.csv("https://raw.githubusercontent.com/ryanleewatts/final-project/master/data/graph1.csv", function(d, i, columns) {
   for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
   d.total = t;
   return d;
